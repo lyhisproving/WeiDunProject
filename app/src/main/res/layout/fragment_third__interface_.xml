@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a62510.weidunproject.Third_Interface_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/third_interface_immage"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@color/colorPrimary" />
+        <ListView
+            android:id="@+id/third_interface_listview"
+            android:layout_below="@+id/third_interface_immage"
+            android:layout_width="match_parent"
+            android:divider="#6e6f70"
+            android:minHeight="300dp"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+
+    </RelativeLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+</FrameLayout>

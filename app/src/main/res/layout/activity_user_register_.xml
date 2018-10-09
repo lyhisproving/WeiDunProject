@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.a62510.weidunproject.User_register_Activity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="5dp"
+        android:text="请输入账号:"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_centerVertical="true"
+        android:text="请输入密码:"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="5dp"
+        android:text="请重新输入密码:"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toEndOf="@+id/textView1"
+        android:ems="10"
+        android:hint="请输入账号"
+        android:singleLine="true"
+        android:id="@+id/注册界面账号框" />
+
+    <EditText
+        android:id="@+id/注册界面密码框"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/注册界面密码确认框"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:ems="10"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/注册界面注册按钮"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/注册界面密码确认框"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_selector"
+        android:text="确定"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/注册界面返回按钮"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/注册界面注册按钮"
+        android:layout_alignBottom="@+id/注册界面注册按钮"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/注册界面注册按钮"
+        android:text="返回"
+        android:background="@drawable/btn_selector"
+        android:textColor="#000"/>
+</RelativeLayout>
+

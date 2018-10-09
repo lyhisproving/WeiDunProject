@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a62510.weidunproject.Device_Activity">
+
+    <TextView
+        android:id="@+id/device_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="我的设备"
+        android:textSize="40dp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/device1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/device_text"
+        android:background="@drawable/btn_selector"
+        android:text="设备A"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/device2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/device1"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/btn_selector"
+        android:text="设备B"
+        android:textSize="60dp" />
+
+
+</RelativeLayout>
